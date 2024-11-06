@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.navbar {
+    background-color: #333;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+}
+.conteudo {
+    flex: 1;
+    padding: 32px;
+}
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+.produto {
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: white;
+    border-radius: 8px;
+}
+.produto:hover {
+    transform: scale(1.05);
+}
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(2, 147, 46);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+.whatsapp-button:hover {
+    transform: scale(1.1)
+}
+.rodape {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+  .saiba-mais {
+   background-color: #4caf50;
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 4px;
+   transition: background-color 0.3 ease;
+}
+  .saiba-mais {
+    background-color: #45a049;
+  }
